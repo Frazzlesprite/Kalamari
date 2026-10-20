@@ -3,8 +3,6 @@
 
   var FORM_ENDPOINT = "";
 
-  var PLACEHOLDER_EMAIL = "contact@example.com";
-
   var yearEls = document.querySelectorAll("[data-year]");
   Array.prototype.forEach.call(yearEls, function (el) {
     el.textContent = String(new Date().getFullYear());
@@ -275,9 +273,7 @@
       })
       .catch(function () {
         setStatus(
-          "Something went wrong and the message was not sent. Please try again, or email us directly at " +
-            PLACEHOLDER_EMAIL +
-            ".",
+          "Something went wrong and the message was not sent. Please try again.",
           "error"
         );
       })
