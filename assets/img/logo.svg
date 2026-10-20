@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 2 810 152" role="img" aria-labelledby="kalamari-title">
+  <title id="kalamari-title">Kalamari</title>
+  <g fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M9 15 V140"/>
+    <path d="M9 88 L63 40"/>
+    <path d="M9 88 L58 140"/>
+    <path d="M236 15 V140"/>
+    <path d="M317 47 A43 43 0 1 0 317 133 A43 43 0 1 0 317 47"/>
+    <path d="M360 40 V140"/>
+    <path d="M404 140 V82 A34 34 0 0 1 472 82 V140"/>
+    <path d="M472 82 A34 34 0 0 1 540 82 V140"/>
+    <path d="M627 47 A43 43 0 1 0 627 133 A43 43 0 1 0 627 47"/>
+    <path d="M670 40 V140"/>
+    <path d="M714 40 V140"/>
+    <path d="M714 82 A34 34 0 0 1 748 48"/>
+    <path d="M781 40 V140"/>
+  </g>
+  <path fill="currentColor" fill-rule="evenodd" d="M148 24 L201 140 H95 Z M148 50.5 L183.9 129 H112.1 Z M148 79.4 L165.2 117 H130.8 Z M148 96.2 L154.3 110 H141.7 Z"/>
+  <circle cx="781" cy="24" r="9.5" fill="currentColor"/>
+</svg>
