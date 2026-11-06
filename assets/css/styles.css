@@ -540,6 +540,18 @@ svg {
   border-radius: var(--radius-lg);
 }
 
+.featured--flip .featured-copy {
+  order: 2;
+}
+
+.featured--flip .featured-list {
+  order: 1;
+}
+
+.featured--warm {
+  background: linear-gradient(135deg, #ffffff 0%, #fdf3ec 100%);
+}
+
 .featured-copy {
   display: grid;
   gap: 16px;
@@ -1092,6 +1104,11 @@ html.js .delay-3 {
   .featured,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .featured--flip .featured-copy,
+  .featured--flip .featured-list {
+    order: 0;
   }
 
   .hero-visual {
