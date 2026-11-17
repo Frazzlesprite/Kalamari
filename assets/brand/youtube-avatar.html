@@ -1,0 +1,51 @@
+<!doctype html>
+<!--
+  Kalamari — YouTube profile picture (source)
+
+  Canvas: 800 × 800 PNG (YouTube recommends 800 × 800, minimum 98 × 98, 4 MB max).
+  YouTube crops the square to a circle, so the mark stays inside the inscribed
+  disc: it is 450 px tall, base corners ~346 px from the centre against a 400 px radius.
+  Mark paths are copied from assets/img/mark.svg — update both if the mark changes.
+-->
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Kalamari — YouTube avatar 800 × 800</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:800px;height:800px;overflow:hidden;background:#0b8aac}
+
+  #stage{
+    position:relative;width:800px;height:800px;overflow:hidden;
+    background:radial-gradient(1000px 1000px at 50% 38%, #0f96b8 0%, #0b8aac 62%, #0a7c9c 100%);
+  }
+
+  .layer{position:absolute;inset:0}
+  .grain{opacity:.5;mix-blend-mode:overlay;pointer-events:none}
+
+  .mark-wrap{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  }
+  .mark{height:450px;display:block;transform:translateY(-24px)} /* optical, not box, centring */
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="layer grain">
+    <svg width="100%" height="100%">
+      <filter id="n">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#n)" opacity="0.18"/>
+    </svg>
+  </div>
+
+  <div class="mark-wrap">
+    <svg class="mark" viewBox="-6 -6 118 128" aria-hidden="true" focusable="false">
+      <path fill="#FAFAF7" fill-rule="evenodd" d="M53 0 L106 116 H0 Z M53 26.5 L88.9 105 H17.1 Z M53 55.4 L70.2 93 H35.8 Z M53 72.2 L59.3 86 H46.7 Z"/>
+    </svg>
+  </div>
+</div>
+</body>
+</html>
