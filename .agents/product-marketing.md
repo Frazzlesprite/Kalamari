@@ -37,15 +37,21 @@ site purely a shopfront for the apps?
 
 ## Target Audience
 
-**Target visitors:** two kinds, and they want different things.
-1. Someone deciding whether to install a Kalamari app, checking that the studio
-   is real and will not vanish.
-2. Someone with feedback, a partnership idea, or an early-access request.
+**Target visitors:** two kinds, in this order.
+1. Someone deciding whether to install a Kalamari app. They want the product,
+   the Play link for anything live, and enough proof that the studio is real.
+2. Someone who wants something made. They want to see the standard of the work
+   and a way to reach the person who does it.
+
+**Owner-stated, 2026-11-18:** the site is a platform to inform and direct people
+to the Play Store links for live products, and a showcase for people who might
+want to reach out to have something made. Both jobs are real; the products come
+first on the page.
 
 **Decision-maker:** the individual. There is no procurement.
 
-**Primary use case:** confirming that these apps are made by a trustworthy
-independent studio with a consistent stance on privacy and calm design.
+**Primary use case:** install an app, or start a conversation about building
+one.
 
 **Jobs to be done:**
 - When I am about to install one of these apps, I want to know who made it, so I
@@ -53,14 +59,8 @@ independent studio with a consistent stance on privacy and calm design.
 - When I have a problem or an idea, I want one obvious way to reach the person
   who built it.
 
-**Use cases:** app discovery from a store listing, support questions, feedback,
-partnership and press enquiries.
-
-`[needs the owner]` The site can do one of two jobs as its primary: (a) send
-people to the apps — which wants store badges, product links and screenshots
-above the fold; or (b) attract people who want software built for them — which
-wants services, examples and money. Pick one as primary and the page can be
-written to do it; today it is trying to be both.
+**Use cases:** app discovery from a store listing, deciding whether to install,
+and starting a build enquiry.
 
 ## Problems & Pain Points
 
@@ -134,8 +134,14 @@ a white-label build — unless the studio decides to offer that.
 
 ## Customer Language
 
+**Rule (owner-stated, 2026-11-18): customer-facing copy is written from verbatim
+customer language.** Quotes live in `.agents/customer-language.md`; if a phrase
+is not in that file, it does not ship. Where no corpus exists yet, reuse the
+words already in the product — the FAQ, the store listing, the app's own
+strings — and mark a new line as unverified rather than inventing one.
+
 **How they describe the problem:** `[needs the owner]` — collect verbatim lines
-from support email.
+from support email and build enquiries.
 
 **How they describe us:** `[needs the owner]`
 
@@ -193,15 +199,16 @@ that cannot be sourced.
 
 ## Goals
 
-**Business goal:** `[needs the owner]` — the site's primary job: app installs,
-or studio enquiries? Until that is decided, the page keeps serving neither
-well. See Target Audience for the two shapes.
+**Business goal:** two jobs, in order (owner-stated, 2026-11-18). Primary:
+direct people to the Play listing of every live product. Secondary: showcase the
+work so someone with an idea can start a conversation. A product with no live
+listing stays "coming soon" and does not get a store link.
 
-**Key conversion action:** if the job is installs, it is a click to a store
-listing. If the job is enquiries, it is the contact form. That form has no
-endpoint configured (`FORM_ENDPOINT` is empty in `assets/js/main.js`), so it
-currently tells the visitor, honestly, that nothing was sent. Wiring it is a
-prerequisite for the enquiry path.
+**Key conversion action:** a click to a Play listing for a live app; then the
+contact form for build enquiries. That form has no endpoint configured
+(`FORM_ENDPOINT` is empty in `assets/js/main.js`), so it currently tells the
+visitor, honestly, that nothing was sent. Wiring it is a prerequisite for the
+showcase job.
 
 **Current metrics:** `[needs the owner]` — traffic and referral sources, if
 Cloudflare Analytics is on the studio site.
