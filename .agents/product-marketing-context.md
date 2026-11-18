@@ -56,9 +56,11 @@ independent studio with a consistent stance on privacy and calm design.
 **Use cases:** app discovery from a store listing, support questions, feedback,
 partnership and press enquiries.
 
-`[needs the owner]` Is visitor 1 the audience you care about, or do you want the
-site to attract work (clients, contract builds)? The answer changes the whole
-page, and the file should say one thing.
+`[needs the owner]` The site can do one of two jobs as its primary: (a) send
+people to the apps — which wants store badges, product links and screenshots
+above the fold; or (b) attract people who want software built for them — which
+wants services, examples and money. Pick one as primary and the page can be
+written to do it; today it is trying to be both.
 
 ## Problems & Pain Points
 
@@ -191,13 +193,15 @@ that cannot be sourced.
 
 ## Goals
 
-**Business goal:** `[needs the owner]` — is the site meant to earn installs for
-the apps, or enquiries for the studio? The two goals want different pages.
+**Business goal:** `[needs the owner]` — the site's primary job: app installs,
+or studio enquiries? Until that is decided, the page keeps serving neither
+well. See Target Audience for the two shapes.
 
-**Key conversion action:** today it is the contact form. That form has no
+**Key conversion action:** if the job is installs, it is a click to a store
+listing. If the job is enquiries, it is the contact form. That form has no
 endpoint configured (`FORM_ENDPOINT` is empty in `assets/js/main.js`), so it
-currently tells the visitor, honestly, that nothing was sent. Until it is wired,
-the site's only conversion is a click through to an app.
+currently tells the visitor, honestly, that nothing was sent. Wiring it is a
+prerequisite for the enquiry path.
 
 **Current metrics:** `[needs the owner]` — traffic and referral sources, if
 Cloudflare Analytics is on the studio site.
