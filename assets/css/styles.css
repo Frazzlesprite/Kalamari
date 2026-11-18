@@ -965,6 +965,34 @@ svg {
   font-size: 0.85rem;
 }
 
+.footer-meta {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-soc {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #97a09a;
+  text-decoration: none;
+  transition: color 0.16s ease;
+}
+
+.footer-soc svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.footer-soc:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* 404 */
 
 .error-page {
